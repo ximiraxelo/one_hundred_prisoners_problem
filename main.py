@@ -7,6 +7,12 @@ class Prisoner:
     def __repr__(self):
         return f"Prisoner({self.number})"
 
+    def open_drawer(self, drawer):
+        self.choices -= 1
+        drawer.opened = True
+
+        return drawer.card
+
 
 class Drawer:
     def __init__(self, number, card):
