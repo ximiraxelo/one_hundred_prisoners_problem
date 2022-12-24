@@ -30,7 +30,7 @@ Nesta estratégia os prisioneiros seguirão o seguinte algoritmo:
 2. Se a gaveta aberta conter o cartão com o seu número FINALIZE. Caso não, abra a gaveta com este número.
 3. Caso o número de gavetas abertas seja menor ou igual a 50 repita o passo 2. Caso não, FINALIZE.
 
-Esta estratégia se baseia no princípio de que esta configuração de gavetas e cartões geram ciclos, ou seja, cada gaveta aponta para outra gaveta de forma que se possa formar um ciclo. Na pior das hipóteses este ciclo terá 100 gavetas e na melhor 1. Desta forma, se o tamanho do maior ciclo $\max{(L)}$ na configuração de gavetas e cartões for menor ou igual a 50, garantidamente todos os prisioneiros encontrarão os cartões com seus números. Então a probabilidade que rege o sucesso destes prisioneiros é dada pela probabilidade do tamanho do maior $\max{(L)}$ ciclo ser menor ou igual a 50. Esta probabilidade é dada por:
+Esta estratégia se baseia no princípio de que esta configuração de gavetas e cartões geram ciclos, ou seja, cada gaveta aponta para outra gaveta de forma que se possa formar um ciclo de tamanho $L$. Na pior das hipóteses este ciclo terá 100 gavetas e na melhor 1. Desta forma, se o tamanho do maior ciclo $\max{(L)}$ na configuração de gavetas e cartões for menor ou igual a 50, garantidamente todos os prisioneiros encontrarão os cartões com seus números. Então a probabilidade que rege o sucesso destes prisioneiros é dada pela probabilidade do tamanho do maior $\max{(L)}$ ciclo ser menor ou igual a 50. Esta probabilidade é dada por:
 
 $$P(\max{(L)}\leq50)=1-\sum_{j=51}^{100}\frac{1}{j}\approx0.3118$$
 
