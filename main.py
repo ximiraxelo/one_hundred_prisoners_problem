@@ -48,3 +48,19 @@ class Problem:
 
         return [Drawer(*arg) for arg in args]
 
+    def __exec_math_strategy(self, prisoner):
+        success = prisoner.open_drawer(self.drawers[prisoner.number - 1])
+        chosen_card = self.drawers[prisoner.number - 1].card
+
+        if success:
+            return True
+
+        while prisoner.choices != 0:
+            success = prisoner.open_drawer(self.drawers[chosen_card - 1])
+            chosen_card = self.drawers[chosen_card - 1].card
+
+            if success:
+                return True
+
+        return False
+
