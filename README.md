@@ -40,6 +40,28 @@ Uma prova para este resultado pode ser vista no [vídeo de Derek Muller, Petr Le
 
 Desenvolver um algoritmo de simulação do Problema dos 100 Prisioneiros, de forma que se possa confirmar a eficácia da estratégia matemática em relação à estratégia randômica.
 
+## Algoritmo
+
+O algoritmo foi construído inteiramente em Python, na versão 3.10.2 com o uso do módulo ` random`. Você precisará do Python instalado para executar este algoritmo.
+
+Para executar o algoritmo clone este repositório usando:
+
+`git clone`
+
+Crie um arquivo `.py` na pasta do projeto e execute o seguinte trecho de código:
+
+```python
+from main import Problem
+
+problem = Problem()  
+
+result_random = problem.start() # estratégia randômica
+
+result_math = problem.start(math_strategy=True) # estratégia matemática
+```
+
+Este código executará o problema uma única vez, `result_random` e `result_math` são variáveis boolenas, serão `True` caso todos os prisioneiros encontrem seus cartões e `False` caso contrário.
+
 ## Resultados
 
 Para verificar a eficácia da estratégia matemática o problema foi executada 1000 vezes, onde pôde-se comparar a performance dos métodos:
