@@ -35,6 +35,9 @@ class Problem:
     def __repr__(self):
         return f"Problem({self.n_prisoners}, {self.n_drawers}, math_strategy={self.math_strategy})"
 
+    def __populate(self):
+        self.prisoners = [Prisoner(number) for number in range(1, self.n_prisoners + 1)]
+        self.drawers = self.__create_drawers()
 
     def __create_drawers(self):
         drawers_numbers = list(range(1, self.n_drawers + 1))
