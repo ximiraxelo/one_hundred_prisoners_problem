@@ -59,7 +59,7 @@ O algoritmo foi construído inteiramente em Python, na versão 3.10.2 com o uso 
 
 Para executar o algoritmo clone este repositório usando:
 
-`git clone`
+`git clone https://github.com/ximiraxelo/one_hundred_prisoners_problem.git`
 
 Crie um arquivo `.py` na pasta do projeto e execute o seguinte trecho de código:
 
