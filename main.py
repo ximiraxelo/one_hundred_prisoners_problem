@@ -7,10 +7,11 @@ class Prisoner:
         return f"Prisoner({self.number})"
 
     def open_drawer(self, drawer):
-        self.choices -= 1
-        drawer.opened = True
+        if self.number != drawer.card:
+            self.choices -= 1
+            return False
 
-        return drawer.card
+        return True
 
 
 class Drawer:
