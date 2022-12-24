@@ -27,15 +27,14 @@ class Drawer:
 
 
 class Problem:
-    def __init__(self, n_prisoners=100, n_drawers=100, strategy=False):
+    def __init__(self, n_prisoners=100, n_drawers=100, math_strategy=False):
         self.n_prisoners = n_prisoners
         self.n_drawers = n_drawers
-        self.strategy = strategy
+        self.math_strategy = math_strategy
 
     def __repr__(self):
-        return (
-            f"Problem({self.n_prisoners}, {self.n_drawers}, strategy={self.strategy})"
-        )
+        return f"Problem({self.n_prisoners}, {self.n_drawers}, math_strategy={self.math_strategy})"
+
 
     def __create_drawers(self):
         drawers_numbers = list(range(1, self.n_drawers + 1))
