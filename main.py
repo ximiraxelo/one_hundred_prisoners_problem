@@ -34,3 +34,12 @@ class Problem:
             f"Problem({self.n_prisoners}, {self.n_drawers}, strategy={self.strategy})"
         )
 
+    def __create_drawers(self):
+        drawers_numbers = list(range(1, self.n_drawers + 1))
+        cards = list(range(1, self.n_drawers + 1))
+
+        rnd.shuffle(cards)
+        args = zip(drawers_numbers, cards)
+
+        return [Drawer(*arg) for arg in args]
+
