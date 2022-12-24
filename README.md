@@ -34,7 +34,7 @@ Esta estratégia se baseia no princípio de que esta configuração de gavetas e
 
 $$P(\max{(L)}\leq50)=1-\sum_{j=51}^{100}\frac{1}{j}\approx0.3118$$
 
-Uma prova para este resultado pode ser vista no [vídeo de Derek Muller no canal Veritasium](https://www.youtube.com/watch?v=iSNsgj1OCLA).
+Uma prova para este resultado pode ser vista no [vídeo de Derek Muller, Petr Lebedev e Emily  Zhang no canal Veritasium](https://www.youtube.com/watch?v=iSNsgj1OCLA).
 
 ## Objetivo
 
