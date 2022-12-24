@@ -29,7 +29,7 @@ Diante do problema definido há duas estratégias de solução que serão utiliz
 
 Nesta estratégia os prisioneiros escolherão as gavetas de forma randômica. Diante disto a probabilidade $P_i$ de um prisioneiro $i$ encontrar seu número é:
 
-$$P_i(\text{sucesso}) = \frac{50\,\, \text{tentativas}}{100\,\, \text{gavetas}} =\frac{1}{2} = 0.5$$
+$$P_i(\text{sucesso}) = \frac{\text{50 tentativas}}{\text{100 gavetas}} =\frac{1}{2} = 0.5$$
 
 Para 100 prisioneiros, como os eventos são independentes, a probabilidade de todos encontrarem seus números é dada pelo seguinte produtório:
 
