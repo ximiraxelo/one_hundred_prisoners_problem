@@ -21,6 +21,12 @@ A definição aqui utilizada para o problema dos 100 prisioneiros foi extraída 
 
 > "A hundred prisoners, each uniquely identified by a number between 1 and 100, have been sentenced to death. The director of the prison gives them a last chance. He has a cabinet with 100 drawers (numbered 1 to 100). In each, he’ll place at random a card with a prisoner’s number (all numbers different). Prisoners will be allowed to enter the room one after the other and open, then close again, 50 drawers of their own choosing, but will not in any way be allowed to communicate with one another afterwards. The goal of each prisoner is to locate the drawer that contains his own number. If all prisoners succeed, then they will all be spared; if at least one fails, they will all be executed."
 
+Uma ótima definição visual pode ser vista no vídeo do canal Veritasium:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=iSNsgj1OCLA
+" target="_blank"><img src="http://img.youtube.com/vi/iSNsgj1OCLA/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="480" height="360"/></a>
+
 ## Estratégias de solução
 
 Diante do problema definido há duas estratégias de solução que serão utilizadas
