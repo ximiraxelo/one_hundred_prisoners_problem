@@ -64,3 +64,16 @@ class Problem:
 
         return False
 
+    def __exec_random_strategy(self, prisoner):
+        choice_list = list(range(self.n_drawers))
+        rnd.shuffle(choice_list)
+
+        for choice in choice_list:
+            success = prisoner.open_drawer(self.drawers[choice])
+
+            if success:
+                return True
+
+            if prisoner.choices == 0:
+                return False
+
