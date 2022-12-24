@@ -40,6 +40,11 @@ Uma prova para este resultado pode ser vista no [vídeo de Derek Muller, Petr Le
 
 Desenvolver um algoritmo de simulação do Problema dos 100 Prisioneiros, de forma que se possa confirmar a eficácia da estratégia matemática em relação à estratégia randômica.
 
+## Resultados
+
+Para verificar a eficácia da estratégia matemática o problema foi executada 1000 vezes, onde pôde-se comparar a performance dos métodos:
+
+![Resultados obtidos](img/results.png)
 
 ## Referências
 
