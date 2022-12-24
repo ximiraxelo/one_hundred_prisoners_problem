@@ -27,10 +27,9 @@ class Drawer:
 
 
 class Problem:
-    def __init__(self, n_prisoners=100, n_drawers=100, math_strategy=False):
+    def __init__(self, n_prisoners=100, n_drawers=100):
         self.n_prisoners = n_prisoners
         self.n_drawers = n_drawers
-        self.math_strategy = math_strategy
 
     def __repr__(self):
         return f"Problem({self.n_prisoners}, {self.n_drawers}, math_strategy={self.math_strategy})"
