@@ -1,3 +1,6 @@
+import random as rnd
+
+
 class Prisoner:
     def __init__(self, number):
         self.number = number
