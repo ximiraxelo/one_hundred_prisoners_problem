@@ -76,3 +76,23 @@ class Problem:
             if prisoner.choices == 0:
                 return False
 
+    def start(self, math_strategy=False):
+        self.__populate()
+        success = []
+
+        if math_strategy:
+            for prisoner in self.prisoners:
+                success.append(self.__exec_math_strategy(prisoner))
+
+            if all(success):
+                return True
+
+            return False
+
+        for prisoner in self.prisoners:
+            success.append(self.__exec_random_strategy(prisoner))
+
+        if all(success):
+            return True
+
+        return False
