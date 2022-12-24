@@ -2,6 +2,19 @@
 
 O problema dos 100 prisioneiros é um problema matemático de probabilidade e combinatória, sua definição original pode ser encontrada em [Gál e Miltersen (2003)](https://doi.org/10.1007/3-540-45061-0_28).
 
+### Sumário
+
+- [O Problema dos 100 prisioneiros](#o-problema-dos-100-prisioneiros)
+    - [Sumário](#sumário)
+  - [Definição](#definição)
+  - [Estratégias de solução](#estratégias-de-solução)
+    - [Estratégia randômica](#estratégia-randômica)
+    - [Estratégia matemática](#estratégia-matemática)
+  - [Objetivo](#objetivo)
+  - [Algoritmo](#algoritmo)
+  - [Resultados](#resultados)
+  - [Referências](#referências)
+
 ## Definição
 
 A definição aqui utilizada para o problema dos 100 prisioneiros foi extraída de [Flajolet e Sedgewick (2009, p. 124)](http://algo.inria.fr/flajolet/Publications/book.pdf):
