@@ -55,7 +55,7 @@ Desenvolver um algoritmo de simulação do Problema dos 100 Prisioneiros, de for
 
 ## Algoritmo
 
-O algoritmo foi construído inteiramente em Python, na versão 3.10.2 com o uso do módulo ` random`. Você precisará do Python instalado para executar este algoritmo.
+O algoritmo foi construído inteiramente em Python, na versão 3.10.2 com o uso do módulo `random`. Você precisará do Python instalado para executar este algoritmo.
 
 Para executar o algoritmo clone este repositório usando:
 
