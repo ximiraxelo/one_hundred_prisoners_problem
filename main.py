@@ -22,3 +22,10 @@ class Drawer:
 
     def __repr__(self):
         return f"Drawer({self.number}, {self.card})"
+
+
+class Problem:
+    def __init__(self, n_prisoners=100, n_drawers=100, strategy=False):
+        self.n_prisoners = n_prisoners
+        self.n_drawers = n_drawers
+        self.strategy = strategy
