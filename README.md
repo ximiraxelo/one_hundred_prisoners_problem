@@ -45,4 +45,4 @@ Desenvolver um algoritmo de simulação do Problema dos 100 Prisioneiros, de for
 
 - GÁL, A.; MILTERSEN, P. B. The Cell Probe Complexity of Succinct Data Structures. In: BAETEN, J. C. M. et al. (Eds.). **Automata, Languages and Programming.** Berlin, Heidelberg: Springer Berlin Heidelberg, 2003. v. 2719p. 332–344. 
 - FLAJOLET, P.; SEDGEWICK, R. **Analytic combinatorics.** Cambridge ; New York: Cambridge University Press, 2009. 
-- MULLER, D.; LEBEDEV, P.; ZHANG, E. **The Riddle That Seems Impossible Even If You Know The Answer.** Disponível em: <https://www.youtube.com/watch?v=iSNsgj1OCLA>. Acesso em: 24 dez. 2022. 
+- MULLER, D.; LEBEDEV, P.; ZHANG, E. **The Riddle That Seems Impossible Even If You Know The Answer.**, 2022 Disponível em: <https://www.youtube.com/watch?v=iSNsgj1OCLA>. Acesso em: 24 dez. 2022. 
