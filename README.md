@@ -1,10 +1,10 @@
-# O Problema dos 100 prisioneiros 
+# O Problema dos 100 Prisioneiros 
 
-O problema dos 100 prisioneiros é um problema matemático de probabilidade e combinatória, sua definição original pode ser encontrada em [Gál e Miltersen (2003)](https://doi.org/10.1007/3-540-45061-0_28).
+O Problema dos 100 Prisioneiros é um problema matemático de probabilidade e combinatória, sua definição original pode ser encontrada em [Gál e Miltersen (2003)](https://doi.org/10.1007/3-540-45061-0_28).
 
 ### Sumário
 
-- [O Problema dos 100 prisioneiros](#o-problema-dos-100-prisioneiros)
+- [O Problema dos 100 Prisioneiros](#o-problema-dos-100-prisioneiros)
     - [Sumário](#sumário)
   - [Definição](#definição)
   - [Estratégias de solução](#estratégias-de-solução)
@@ -17,7 +17,7 @@ O problema dos 100 prisioneiros é um problema matemático de probabilidade e co
 
 ## Definição
 
-A definição aqui utilizada para o problema dos 100 prisioneiros foi extraída de [Flajolet e Sedgewick (2009, p. 124)](http://algo.inria.fr/flajolet/Publications/book.pdf):
+A definição aqui utilizada para O Problema dos 100 Prisioneiros foi extraída de [Flajolet e Sedgewick (2009, p. 124)](http://algo.inria.fr/flajolet/Publications/book.pdf):
 
 > "A hundred prisoners, each uniquely identified by a number between 1 and 100, have been sentenced to death. The director of the prison gives them a last chance. He has a cabinet with 100 drawers (numbered 1 to 100). In each, he’ll place at random a card with a prisoner’s number (all numbers different). Prisoners will be allowed to enter the room one after the other and open, then close again, 50 drawers of their own choosing, but will not in any way be allowed to communicate with one another afterwards. The goal of each prisoner is to locate the drawer that contains his own number. If all prisoners succeed, then they will all be spared; if at least one fails, they will all be executed."
 
