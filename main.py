@@ -2,9 +2,9 @@ import random as rnd
 
 
 class Prisoner:
-    def __init__(self, number):
+    def __init__(self, number, choices=50):
         self.number = number
-        self.choices = 50
+        self.choices = choices
 
     def __repr__(self):
         return f"Prisoner({self.number})"
