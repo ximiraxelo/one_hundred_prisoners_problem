@@ -18,6 +18,12 @@ class Drawer:
 
 class Prisoner:
     def __init__(self, number: int, choices: int = 50) -> None:
+        """Constructs the prisoner object
+
+        Args:
+            number (int): the number of the prisoner
+            choices (int, optional): the number of drawers the prisoner can open. Defaults to 50.
+        """        
         self.number = number
         self.choices = choices
 
@@ -25,6 +31,14 @@ class Prisoner:
         return f"Prisoner({self.number})"
 
     def open_drawer(self, drawer: Drawer) -> bool:
+        """Opens a drawer and compares the drawer card with the prisoner number
+
+        Args:
+            drawer (Drawer): the drawer object to be opened
+
+        Returns:
+            bool: the result of the comparison, true for an equality, false otherwise.
+        """        
         if self.number != drawer.card:
             self.choices -= 1
             return False
