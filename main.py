@@ -1,15 +1,24 @@
 import random as rnd
 
 
+class Drawer:
+    def __init__(self, number: int, card: int) -> None:
+        self.number = number
+        self.card = card
+
+    def __repr__(self) -> str:
+        return f"Drawer({self.number}, {self.card})"
+
+
 class Prisoner:
-    def __init__(self, number, choices=50):
+    def __init__(self, number: int, choices: int = 50) -> None:
         self.number = number
         self.choices = choices
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Prisoner({self.number})"
 
-    def open_drawer(self, drawer):
+    def open_drawer(self, drawer: Drawer) -> bool:
         if self.number != drawer.card:
             self.choices -= 1
             return False
@@ -17,28 +26,19 @@ class Prisoner:
         return True
 
 
-class Drawer:
-    def __init__(self, number, card):
-        self.number = number
-        self.card = card
-
-    def __repr__(self):
-        return f"Drawer({self.number}, {self.card})"
-
-
 class Problem:
-    def __init__(self, n_prisoners=100, n_drawers=100):
+    def __init__(self, n_prisoners: int = 100, n_drawers: int = 100) -> None:
         self.n_prisoners = n_prisoners
         self.n_drawers = n_drawers
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Problem({self.n_prisoners}, {self.n_drawers})"
 
-    def __populate(self):
+    def __populate(self) -> None:
         self.prisoners = [Prisoner(number) for number in range(1, self.n_prisoners + 1)]
         self.drawers = self.__create_drawers()
 
-    def __create_drawers(self):
+    def __create_drawers(self) -> list[Drawer]:
         drawers_numbers = list(range(1, self.n_drawers + 1))
         cards = list(range(1, self.n_drawers + 1))
 
@@ -47,7 +47,7 @@ class Problem:
 
         return [Drawer(*arg) for arg in args]
 
-    def __exec_math_strategy(self, prisoner):
+    def __exec_math_strategy(self, prisoner: Prisoner) -> bool:
         success = prisoner.open_drawer(self.drawers[prisoner.number - 1])
         chosen_card = self.drawers[prisoner.number - 1].card
 
@@ -63,7 +63,7 @@ class Problem:
 
         return False
 
-    def __exec_random_strategy(self, prisoner):
+    def __exec_random_strategy(self, prisoner: Prisoner) -> bool:
         choice_list = list(range(self.n_drawers))
         rnd.shuffle(choice_list)
 
@@ -74,9 +74,11 @@ class Problem:
                 return True
 
             if prisoner.choices == 0:
-                return False
+                break
 
-    def start(self, math_strategy=False):
+        return False
+
+    def start(self, math_strategy: bool = False) -> bool:
         self.__populate()
         success = []
 
