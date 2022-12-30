@@ -32,7 +32,7 @@ class Problem:
         self.n_drawers = n_drawers
 
     def __repr__(self):
-        return f"Problem({self.n_prisoners}, {self.n_drawers}, math_strategy={self.math_strategy})"
+        return f"Problem({self.n_prisoners}, {self.n_drawers})"
 
     def __populate(self):
         self.prisoners = [Prisoner(number) for number in range(1, self.n_prisoners + 1)]
