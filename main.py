@@ -48,6 +48,14 @@ class Prisoner:
 
 class Problem:
     def __init__(self, n_prisoners: int = 100, n_drawers: int = 100) -> None:
+        """Constructs the problem object with
+
+        Args:
+            n_prisoners (int, optional): the number of prisoners on the
+            problem instance. Defaults to 100.
+            n_drawers (int, optional): the number of drawers on the
+            problem instance. Defaults to 100.
+        """
         self.n_prisoners = n_prisoners
         self.n_drawers = n_drawers
 
@@ -99,6 +107,17 @@ class Problem:
         return False
 
     def start(self, math_strategy: bool = False) -> bool:
+        """Simulates the problem with a randomly generated set of
+        prisoners and drawers
+
+        Args:
+            math_strategy (bool, optional): enables the mathematical strategy
+            in the simulation of the problem instance. Defaults to False.
+
+        Returns:
+            bool: the result of the problem simulation,
+            true for prisoners success, false otherwise.
+        """
         self.__populate()
         success = []
 
