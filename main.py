@@ -126,17 +126,21 @@ class Problem:
 
         if math_strategy:
             for prisoner in self.prisoners:
-                success.append(self.__exec_math_strategy(prisoner))
+                prisoner_success = self.__exec_math_strategy(prisoner)
 
-            if all(success):
-                return True
+                if not prisoner_success:
+                    return False
 
-            return False
+                success.append(prisoner_success)
 
-        for prisoner in self.prisoners:
-            success.append(self.__exec_random_strategy(prisoner))
-
-        if all(success):
             return True
 
-        return False
+        for prisoner in self.prisoners:
+            prisoner_success = self.__exec_random_strategy(prisoner)
+
+            if not prisoner_success:
+                return False
+
+            success.append(prisoner_success)
+
+        return True
