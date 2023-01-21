@@ -68,13 +68,10 @@ class Problem:
         self.drawers = self.__create_drawers()
 
     def __create_drawers(self) -> list[Drawer]:
-        drawers_numbers = list(range(1, self.n_drawers + 1))
         cards = list(range(1, self.n_drawers + 1))
-
         rnd.shuffle(cards)
-        args = zip(drawers_numbers, cards)
 
-        return [Drawer(*arg) for arg in args]
+        return [Drawer(card) for card in cards]
 
     def __exec_math_strategy(self, prisoner: Prisoner) -> bool:
         success = prisoner.open_drawer(self.drawers[prisoner.number - 1])
