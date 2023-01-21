@@ -2,18 +2,16 @@ import random as rnd
 
 
 class Drawer:
-    def __init__(self, number: int, card: int) -> None:
+    def __init__(self, card: int) -> None:
         """Constructs the drawer object
 
         Args:
-            number (int): the number of the drawer
             card (int): the number of the card inside the drawer
         """
-        self.number = number
         self.card = card
 
     def __repr__(self) -> str:
-        return f"Drawer({self.number}, {self.card})"
+        return f"Drawer({self.card})"
 
 
 class Prisoner:
